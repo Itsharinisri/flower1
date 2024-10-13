@@ -1,0 +1,138 @@
+/* Body and Background */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5daa9, #f08ed4); /* Two light colors blending */
+    min-height: 100vh; /* Ensure background covers entire height */
+}
+
+/* Header Section */
+.shop-header {
+    background: linear-gradient(135deg, #e583bc, #e9aa67); /* Theme background with two soft colors */
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    color: #fff; /* Make text white to match background contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.shop-name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #121111; /* White text for contrast */
+    margin: 0;
+}
+
+/* Container for Shop */
+.shop-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Shop Summary Section */
+.shop-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.total-cost {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.date-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#order-date {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Flower Cards Grid */
+.flower-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.flower-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 23%; /* 4 cards per row */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; 
+}
+
+/* Flower Image */
+.flower-image {
+    width: 100%; /* Take full width of the card */
+    height: 250px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the box while keeping its aspect ratio */
+    border-radius: 10px;
+}
+
+/* Quantity Control */
+.quantity-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantity-control button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Flower Card Content */
+.flower-card h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flower-card p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Add/Remove to Cart Buttons */
+.add-to-cart, .remove-from-cart {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.add-to-cart:hover, .remove-from-cart:hover {
+    background-color: #e68900;
+}
